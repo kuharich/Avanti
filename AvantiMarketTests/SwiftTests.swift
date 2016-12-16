@@ -2,7 +2,7 @@
 //  SwiftTests.swift
 //  AvantiMarket
 //
-//  Created by Tero Jankko on 7/13/16.
+//  Created by Mark Kuharich on 7/13/16.
 //  Copyright © 2016 BYNDL. All rights reserved.
 //
 

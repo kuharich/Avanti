@@ -2,7 +2,7 @@
 //  PrefixHeader.pch
 //  AvantiMarket
 //
-//  Created by Tero Jankko on 1/11/16.
+//  Created by Mark Kuharich on 1/11/16.
 //  Copyright © 2016 Byndl. All rights reserved.
 //
 
@@ -26,7 +26,7 @@
 #import <CoreServices/CoreServices.h>
 #endif
 
-#import "ParksPantryTest-Swift.h"
+#import "AvantiMarket-Swift.h"
 
 
 #endif /* PrefixHeader_pch */

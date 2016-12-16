@@ -2,7 +2,7 @@
 //  AddCreditCardViewViewController.h
 //  AvantiMarket
 //
-//  Created by Tero Jankko on 3/2/16.
+//  Created by Mark Kuharich on 3/2/16.
 //  Copyright © 2016 Byndl. All rights reserved.
 //
 

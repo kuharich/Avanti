@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "3D5A8B785E24E897EED43FA5F6C0CF1FEB864BA9",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "337A7F0C8D5D6BC5B149A63D1CFB10416D761D97" : 9223372036854775807,
+    "3D5A8B785E24E897EED43FA5F6C0CF1FEB864BA9" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "90A14168-3E1F-49B9-8001-73494660E190",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "337A7F0C8D5D6BC5B149A63D1CFB10416D761D97" : "",
+    "3D5A8B785E24E897EED43FA5F6C0CF1FEB864BA9" : "Avanti\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "AvantiMarket",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "AvantiMarket.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "ssh:\/\/bitbucket.happay.io:7999\/avanti\/mobile-ios-phone.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "337A7F0C8D5D6BC5B149A63D1CFB10416D761D97"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kuharich\/Avanti.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3D5A8B785E24E897EED43FA5F6C0CF1FEB864BA9"
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 //  Discount.m
 //  AvantiMarket
 //
-//  Created by Tero Jankko on 2/18/16.
+//  Created by Mark Kuharich on 2/18/16.
 //  Copyright © 2016 Byndl. All rights reserved.
 //
 
