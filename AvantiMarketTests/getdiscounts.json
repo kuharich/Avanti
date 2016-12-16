@@ -1,0 +1,54 @@
+[
+  {
+  "Amount" : 25,
+  "StartDate" : "2016-01-01T00:00:00.0000000",
+  "StartHour" : 11,
+  "StartMin" : 45,
+  "EndDate" : "2016-11-15T00:00:00.0000000",
+  "EndHour" : 10,
+  "EndMin" : 58,
+  "ProductGroups" : "Creeple Elephants",
+  "Id" : 36,
+  "Name" : "expired",
+  "Score" : 13,
+  "OperatorId" : 121,
+  "BuyQuantity" : 0,
+  "GetQuantity" : 0,
+  "DiscountTypeId" : 3
+  },
+ {
+ "Amount" : 25,
+ "StartDate" : "2016-11-15T00:00:00.0000000",
+ "StartHour" : 11,
+ "StartMin" : 15,
+ "EndDate" : "2016-11-17T00:00:00.0000000",
+ "EndHour" : 10,
+ "EndMin" : 58,
+ "ProductGroups" : "Creeple Elephants",
+ "Id" : 36,
+ "Name" : "not started",
+ "Score" : 13,
+ "OperatorId" : 121,
+ "BuyQuantity" : 0,
+ "GetQuantity" : 0,
+ "DiscountTypeId" : 3
+ },
+ {
+ "Amount" : 25,
+ "StartDate" : "2016-11-15T00:00:00.0000000",
+ "StartHour" : 10,
+ "StartMin" : 58,
+ "EndDate" : "2016-11-16T00:00:00.0000000",
+ "EndHour" : 11,
+ "EndMin" : 0,
+ "ProductGroups" : "Creeple Elephants",
+ "Id" : 36,
+ "Name" : "current",
+ "Score" : 13,
+ "OperatorId" : 121,
+ "BuyQuantity" : 0,
+ "GetQuantity" : 0,
+ "DiscountTypeId" : 3
+ }
+
+]

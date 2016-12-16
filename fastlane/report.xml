@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="fastlane.lanes">
+    
+      
+      <testcase classname="fastlane.lanes" name="0: Verifying required fastlane version" time="0.000548">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="1: default_platform" time="0.000297">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="2: cd .. &amp;&amp; touch tmp.ipa &amp;&amp; rm *.ipa" time="0.007829">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="3: cocoapods" time="21.065475">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="4: cd .. &amp;&amp; ./bump_build.sh ParksPantryTest-Info.plist" time="0.014859">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="5: gym" time="87.129193">
+        
+      </testcase>
+    
+  </testsuite>
+</testsuites>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bodyTextColor</key>
+	<string>#65676a</string>
+	<key>logInButtonColor</key>
+	<string>#b9d535</string>
+	<key>primaryButtonBackgroundColor</key>
+	<string>#b9d535</string>
+	<key>secondaryTextColor</key>
+	<string>#603A12</string>
+	<key>itemBackgroundColor</key>
+	<string>#f6f6f6</string>
+	<key>selectedAmountButtonBackgroundColor</key>
+	<string>#B9D344</string>
+	<key>selectedAmountButtonTextColor</key>
+	<string>#603A12</string>
+	<key>reloadAmountHeaderColor</key>
+	<string>#505B64</string>
+	<key>statusBarStyle</key>
+	<string>black</string>
+	<key>menuSandwichColor</key>
+	<string>#603A12</string>
+	<key>reloadTextColor</key>
+	<string>#603A12</string>
+	<key>historyTextColor</key>
+	<string>#603A12</string>
+	<key>offersTextColor</key>
+	<string>#603A12</string>
+	<key>payTextColor</key>
+	<string>#603A12</string>
+	<key>homeViewTextColor</key>
+	<string>#283D56</string>
+	<key>gradientEnd</key>
+	<string>#f6f6f6</string>
+	<key>gradientStart</key>
+	<string>#f6f6f6</string>
+	<key>primaryBackgroundColor</key>
+	<string>#FFFFFF</string>
+	<key>screenBackgroundColor</key>
+	<string>#e0e0e0</string>
+	<key>textPlaceholderColor</key>
+	<string>#aaaaaa</string>
+	<key>primaryTextColor</key>
+	<string>#603A12</string>
+	<key>backgroundImage</key>
+	<string></string>
+	<key>applicationName</key>
+	<string>continental</string>
+	<key>welcomeText</key>
+	<string>Welcome to Market Twenty 4 Seven</string>
+	<key>quicksandFont</key>
+	<string>continental.assets/Lato-Regular.ttf</string>
+	<key>quicksandBoldFont</key>
+	<string>continental.assets/Lato-Bold.ttf</string>
+	<key>quicksandFontName</key>
+	<string>Lato-Regular</string>
+	<key>quicksandBoldFontName</key>
+	<string>Lato-Bold</string>
+	<key>highlightColor</key>
+	<string>#b9d535</string>
+	<key>offerDescriptionColor</key>
+	<string>#c3dd3f</string>
+	<key>accentTextColor</key>
+	<string>#5f3e26</string>
+</dict>
+</plist>

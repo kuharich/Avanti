@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="TransactionTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="32" translatesAutoresizingMaskIntoConstraints="NO" id="aWX-FG-6Dr">
+                        <rect key="frame" x="20" y="4" width="280" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="bQi-gG-Jp9"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="13"/>
+                        <color key="textColor" red="0.60000002384185791" green="0.60000002384185791" blue="0.60000002384185791" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="7" preferredMaxLayoutWidth="32" translatesAutoresizingMaskIntoConstraints="NO" id="RxV-2j-nYE">
+                        <rect key="frame" x="20" y="21" width="280" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="VOv-ru-euH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="13"/>
+                        <color key="textColor" red="0.60000002384185791" green="0.60000002384185791" blue="0.60000002384185791" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="RxV-2j-nYE" secondAttribute="trailing" constant="20" id="0af-o0-BLC"/>
+                    <constraint firstItem="aWX-FG-6Dr" firstAttribute="leading" secondItem="RxV-2j-nYE" secondAttribute="leading" id="a88-9I-ASS"/>
+                    <constraint firstItem="aWX-FG-6Dr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="mRw-7I-A6H"/>
+                    <constraint firstAttribute="trailing" secondItem="aWX-FG-6Dr" secondAttribute="trailing" constant="20" id="on7-5M-337"/>
+                    <constraint firstItem="RxV-2j-nYE" firstAttribute="top" secondItem="aWX-FG-6Dr" secondAttribute="bottom" constant="-4" id="rMa-yn-3kW"/>
+                    <constraint firstItem="aWX-FG-6Dr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="tEh-8B-3Yf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lblSubTitle" destination="RxV-2j-nYE" id="rYt-ow-Ehw"/>
+                <outlet property="lblTitle" destination="aWX-FG-6Dr" id="zNh-Zu-SAT"/>
+            </connections>
+            <point key="canvasLocation" x="280" y="293"/>
+        </tableViewCell>
+    </objects>
+</document>

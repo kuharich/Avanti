@@ -1,0 +1,33 @@
+//
+//  PrefixHeader.pch
+//  AvantiMarket
+//
+//  Created by Tero Jankko on 1/11/16.
+//  Copyright © 2016 Byndl. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <Availability.h>
+
+#import <UIKit/UIKit.h>
+
+#import <RestKit/RestKit.h>
+#import <ZXingObjC/ZXingObjC.h>
+#import "AvantiCommon.h"
+
+
+#if __IPHONE_OS_VERSION_MIN_REQUIRED
+#import <SystemConfiguration/SystemConfiguration.h>
+#import <MobileCoreServices/MobileCoreServices.h>
+#else
+#import <SystemConfiguration/SystemConfiguration.h>
+#import <CoreServices/CoreServices.h>
+#endif
+
+#import "ParksPantryTest-Swift.h"
+
+
+#endif /* PrefixHeader_pch */
+

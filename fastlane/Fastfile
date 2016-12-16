@@ -1,0 +1,170 @@
+# Customise this file, documentation can be found here:
+# https://github.com/fastlane/fastlane/tree/master/fastlane/docs
+# All available actions: https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Actions.md
+# can also be listed using the `fastlane actions` command
+
+# Change the syntax highlighting to Ruby
+# All lines starting with a # are ignored when running `fastlane`
+
+# If you want to automatically update fastlane if a new version is available:
+# update_fastlane
+
+# This is the minimum version number required.
+# Update this, if you use features of a newer version
+fastlane_version "1.98.0"
+
+default_platform :ios
+
+platform :ios do
+  before_all do
+    # ENV["SLACK_URL"] = "https://hooks.slack.com/services/..."
+    sh "cd .. && touch tmp.ipa && rm *.ipa"
+    cocoapods
+    
+  end
+
+  desc "Runs all the tests"
+  lane :test do
+    scan
+  end
+
+ 
+
+
+  desc "Submit a new Beta Build of each target to Apple TestFlight"
+  desc "This will also make sure the profile is up to date"
+  lane :avanti_beta do
+    # match(type: "appstore") # more information: https://codesigning.guide
+    sh "cd .. && ./bump_build.sh AvantiMarket-Info.plist"
+    ipa = gym(scheme: "AvantiMarket") 
+    #pilot(app_identifier:"com.byndl.AvantiMarkets", ipa:ipa, skip_waiting_for_build_processing:true)
+    # sh "your_script.sh"
+    # You can also use other beta testing services here (run `fastlane actions`)
+  end
+
+  lane :avanti_staging_beta do
+    # match(type: "appstore") # more information: https://codesigning.guide
+    sh "cd .. && ./bump_build.sh AvantiMarketStaging-Info.plist"
+    ipa = gym(scheme: "AvantiMarketStaging") 
+    #pilot(app_identifier:"com.byndl.avantimarketsstaging", ipa:ipa, skip_waiting_for_build_processing:true)
+    # You can also use other beta testing services here (run `fastlane actions`)
+  end
+
+  lane :avanti_test_beta do
+    # match(type: "appstore") # more information: https://codesigning.guide
+    sh "cd .. && ./bump_build.sh AvantiMarketTest-Info.plist"
+    ipa = gym(scheme: "AvantiMarketTest") 
+    #pilot(app_identifier:"com.byndl.avantimarketstest", ipa:ipa, skip_waiting_for_build_processing:true)
+    # You can also use other beta testing services here (run `fastlane actions`)
+  end
+
+  lane :continental_beta do
+    # match(type: "appstore") # more information: https://codesigning.guide
+    sh "cd .. && ./bump_build.sh Continental-Info.plist"
+    ipa = gym(scheme: "Continental") 
+    #pilot(app_identifier:"com.byndl.continental", ipa:ipa, skip_waiting_for_build_processing:true)
+    # You can also use other beta testing services here (run `fastlane actions`)
+  end
+
+  lane :continental_staging_beta do
+    # match(type: "appstore") # more information: https://codesigning.guide
+    sh "cd .. && ./bump_build.sh ContinentalStaging-Info.plist"
+    ipa = gym(scheme: "ContinentalStaging") 
+    #pilot(app_identifier:"com.byndl.continentalstaging", ipa:ipa, skip_waiting_for_build_processing:true)
+    # You can also use other beta testing services here (run `fastlane actions`)
+  end
+
+  lane :continental_test_beta do
+    # match(type: "appstore") # more information: https://codesigning.guide
+    sh "cd .. && ./bump_build.sh ContinentalTest-Info.plist"
+    ipa = gym(scheme: "ContinentalTest") 
+    #pilot(app_identifier:"com.byndl.continentaltest", ipa:ipa, skip_waiting_for_build_processing:true)
+    # You can also use other beta testing services here (run `fastlane actions`)
+  end
+
+ lane :parkspantry_beta do
+    # match(type: "appstore") # more information: https://codesigning.guide
+    sh "cd .. && ./bump_build.sh ParksPantry-Info.plist"
+    ipa = gym(scheme: "ParksPantry") 
+    #pilot(app_identifier:"com.byndl.parkspantry", ipa:ipa, skip_waiting_for_build_processing:true)
+    # You can also use other beta testing services here (run `fastlane actions`)
+  end
+
+  lane :parkspantry_staging_beta do
+    # match(type: "appstore") # more information: https://codesigning.guide
+    sh "cd .. && ./bump_build.sh ParksPantryStaging-Info.plist"
+    ipa = gym(scheme: "ParksPantryStaging") 
+    #pilot(app_identifier:"com.byndl.parkspantrystaging", ipa:ipa, skip_waiting_for_build_processing:true)
+    # You can also use other beta testing services here (run `fastlane actions`)
+  end
+
+  lane :parkspantry_test_beta do
+    # match(type: "appstore") # more information: https://codesigning.guide
+    sh "cd .. && ./bump_build.sh ParksPantryTest-Info.plist"
+    ipa = gym(scheme: "ParksPantryTest") 
+    #pilot(app_identifier:"com.byndl.parkspantrytest", ipa:ipa, skip_waiting_for_build_processing:true)
+    # You can also use other beta testing services here (run `fastlane actions`)
+  end
+
+
+ lane :sodexo_beta do
+    # match(type: "appstore") # more information: https://codesigning.guide
+    sh "cd .. && ./bump_build.sh Sodexo-Info.plist"
+    ipa = gym(scheme: "Sodexo") 
+    pilot(app_identifier:"com.byndl.sodexo", ipa:ipa, skip_waiting_for_build_processing:true)
+    # You can also use other beta testing services here (run `fastlane actions`)
+  end
+
+  lane :sodexo_staging_beta do
+    # match(type: "appstore") # more information: https://codesigning.guide
+    sh "cd .. && ./bump_build.sh SodexoStaging-Info.plist"
+    ipa = gym(scheme: "SodexoStaging") 
+    pilot(app_identifier:"com.byndl.sodexostaging", ipa:ipa, skip_waiting_for_build_processing:true)
+    # You can also use other beta testing services here (run `fastlane actions`)
+  end
+
+  lane :sodexo_test_beta do
+    # match(type: "appstore") # more information: https://codesigning.guide
+    sh "cd .. && ./bump_build.sh SodexoTest-Info.plist"
+    ipa = gym(scheme: "SodexoTest") 
+    pilot(app_identifier:"com.byndl.sodexotest", ipa:ipa, skip_waiting_for_build_processing:true)
+    # You can also use other beta testing services here (run `fastlane actions`)
+  end
+
+
+
+
+
+  desc "Deploy a new version to the App Store"
+  lane :appstore do
+    # match(type: "appstore")
+    # snapshot
+    gym(scheme: "AvantiMarket") # Build your app - more options available
+    deliver(force: true)
+    # frameit
+  end
+
+  # You can define as many lanes as you want
+
+  after_all do |lane|
+    # This block is called, only if the executed lane was successful
+
+    # slack(
+    #   message: "Successfully deployed new App Update."
+    # )
+  end
+
+  error do |lane, exception|
+    # slack(
+    #   message: exception.message,
+    #   success: false
+    # )
+  end
+end
+
+
+# More information about multiple platforms in fastlane: https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Platforms.md
+# All available actions: https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Actions.md
+
+# fastlane reports which actions are used
+# No personal data is recorded. Learn more at https://github.com/fastlane/enhancer

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Quicksand-Bold.ttf">
+            <string>Quicksand-Bold</string>
+        </mutableArray>
+        <mutableArray key="Roboto-Italic.ttf">
+            <string>Roboto-Italic</string>
+            <string>Roboto-Italic</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FeedbackViewController">
+            <connections>
+                <outlet property="btnCategoty" destination="61P-45-eVX" id="1oK-yS-BDU"/>
+                <outlet property="btnNext" destination="Ptd-wn-k9z" id="Zkc-cd-Qts"/>
+                <outlet property="lblContactTitle" destination="tbB-Kd-Bbb" id="9wA-vS-geN"/>
+                <outlet property="txtDescription" destination="WHy-2p-UzH" id="TkM-1v-gOj"/>
+                <outlet property="view" destination="UYQ-22-QRF" id="o6F-MM-5Ec"/>
+                <outlet property="viewConfirmation" destination="i5M-Pr-FkT" id="VzZ-kY-oDa"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="UYQ-22-QRF">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view hidden="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i5M-Pr-FkT">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="qI4-u4-uJd">
+                            <rect key="frame" x="10" y="45" width="300" height="90"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="300" id="OWe-7U-tig"/>
+                                <constraint firstAttribute="height" constant="90" id="n0A-Yq-84H"/>
+                            </constraints>
+                            <string key="text">Thank You!
+
+Your Feedback is appreciated and valued.</string>
+                            <fontDescription key="fontDescription" name="STHeitiTC-Medium" family="Heiti TC" pointSize="14"/>
+                            <color key="textColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgSmile.png" translatesAutoresizingMaskIntoConstraints="NO" id="l21-nW-1hY">
+                            <rect key="frame" x="145" y="135" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="dpj-fM-aId"/>
+                                <constraint firstAttribute="width" constant="30" id="pMB-mX-Qx2"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.95880639570000004" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="l21-nW-1hY" firstAttribute="top" secondItem="qI4-u4-uJd" secondAttribute="bottom" id="2d4-kn-EKt"/>
+                        <constraint firstAttribute="centerX" secondItem="l21-nW-1hY" secondAttribute="centerX" id="3yU-uZ-9IG"/>
+                        <constraint firstItem="qI4-u4-uJd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="45" id="dHd-Mw-BL4"/>
+                        <constraint firstAttribute="centerX" secondItem="qI4-u4-uJd" secondAttribute="centerX" id="dbi-oS-Pdc"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How can we make your experience with us even better?" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="tbB-Kd-Bbb">
+                    <rect key="frame" x="20" y="64" width="280" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Ng4-5x-vRb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="STHeitiTC-Medium" family="Heiti TC" pointSize="14"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="61P-45-eVX">
+                    <rect key="frame" x="20" y="112" width="280" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="PPG-fz-dbQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Roboto-Italic" family="Roboto" pointSize="13"/>
+                    <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="40" maxY="0.0"/>
+                    <state key="normal" title="Select Feedback Category" backgroundImage="imgBGDropDown.png">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="tapOnCategory:" destination="-1" eventType="touchUpInside" id="7Di-1n-a2Z"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ptd-wn-k9z">
+                    <rect key="frame" x="20" y="394" width="280" height="50"/>
+                    <color key="backgroundColor" red="0.51764705882352935" green="0.76078431372549016" blue="0.396078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="a75-zf-GoI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="19"/>
+                    <state key="normal" title="SUBMIT">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="disabled">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="tapOnNext:" destination="-1" eventType="touchUpInside" id="h7z-4U-tJ1"/>
+                    </connections>
+                </button>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Please share your feedback and suggestions here" translatesAutoresizingMaskIntoConstraints="NO" id="WHy-2p-UzH">
+                    <rect key="frame" x="20" y="169" width="280" height="214"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="214" id="f9B-32-0bi"/>
+                    </constraints>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" name="Roboto-Italic" family="Roboto" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="LHf-Sc-SwA"/>
+                    </connections>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" red="0.95294117647058818" green="0.94509803921568625" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="tbB-Kd-Bbb" firstAttribute="leading" secondItem="61P-45-eVX" secondAttribute="leading" id="1AL-8i-2xx"/>
+                <constraint firstItem="61P-45-eVX" firstAttribute="top" secondItem="tbB-Kd-Bbb" secondAttribute="bottom" constant="8" id="1xH-lR-DI0"/>
+                <constraint firstItem="tbB-Kd-Bbb" firstAttribute="leading" secondItem="Ptd-wn-k9z" secondAttribute="leading" id="4Jb-gj-4Zx"/>
+                <constraint firstItem="WHy-2p-UzH" firstAttribute="top" secondItem="61P-45-eVX" secondAttribute="bottom" constant="12" id="5mJ-DO-5BL"/>
+                <constraint firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="68h-fk-Gff"/>
+                <constraint firstItem="tbB-Kd-Bbb" firstAttribute="leading" secondItem="WHy-2p-UzH" secondAttribute="leading" id="8QD-kM-ztO"/>
+                <constraint firstItem="tbB-Kd-Bbb" firstAttribute="trailing" secondItem="61P-45-eVX" secondAttribute="trailing" id="CJ5-cL-DkJ"/>
+                <constraint firstAttribute="trailing" secondItem="tbB-Kd-Bbb" secondAttribute="trailing" constant="20" id="D4Q-vh-IJU"/>
+                <constraint firstItem="tbB-Kd-Bbb" firstAttribute="leading" secondItem="UYQ-22-QRF" secondAttribute="leading" constant="20" id="RRp-fk-aMk"/>
+                <constraint firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="Xgf-aH-Jab"/>
+                <constraint firstItem="i5M-Pr-FkT" firstAttribute="leading" secondItem="UYQ-22-QRF" secondAttribute="leading" id="dD6-EB-hdj"/>
+                <constraint firstItem="i5M-Pr-FkT" firstAttribute="top" secondItem="UYQ-22-QRF" secondAttribute="top" id="iQj-Wa-YfQ"/>
+                <constraint firstItem="tbB-Kd-Bbb" firstAttribute="trailing" secondItem="WHy-2p-UzH" secondAttribute="trailing" id="mHz-mS-Geh"/>
+                <constraint firstItem="tbB-Kd-Bbb" firstAttribute="top" secondItem="UYQ-22-QRF" secondAttribute="top" constant="64" id="pgs-F9-B6l"/>
+                <constraint firstItem="tbB-Kd-Bbb" firstAttribute="trailing" secondItem="Ptd-wn-k9z" secondAttribute="trailing" id="vK5-QW-Be1"/>
+                <constraint firstItem="Ptd-wn-k9z" firstAttribute="top" secondItem="WHy-2p-UzH" secondAttribute="bottom" constant="11" id="zkQ-PF-ZwN"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="336" y="330"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="imgBGDropDown.png" width="274" height="40"/>
+        <image name="imgSmile.png" width="60" height="60"/>
+    </resources>
+</document>

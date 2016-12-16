@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Quicksand-Bold.ttf">
+            <string>Quicksand-Bold</string>
+        </array>
+        <array key="Quicksand-Regular.ttf">
+            <string>Quicksand-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AMHomeViewController">
+            <connections>
+                <outlet property="backgroundView" destination="lv5-Ak-JWi" id="b3F-GG-cRg"/>
+                <outlet property="btnHistory" destination="nNh-02-Rdx" id="34L-3m-vaB"/>
+                <outlet property="btnPay" destination="eMi-bZ-rlq" id="xCs-g8-lb6"/>
+                <outlet property="btnRewards" destination="G6Y-8Y-NOC" id="aGH-Ye-rTr"/>
+                <outlet property="btnWaysToPay" destination="fNj-C6-iDx" id="1SB-oZ-rJn"/>
+                <outlet property="equalWidthsConstraint" destination="A1V-zi-aM2" id="iMw-8a-06q"/>
+                <outlet property="lblBalance" destination="Iqq-pX-rjt" id="kfP-4z-lYc"/>
+                <outlet property="lblBalanceHeader" destination="eNn-Pi-wFC" id="KFq-vD-2qd"/>
+                <outlet property="lblHouseAccount" destination="yCU-BK-ne5" id="oNw-yx-0Kv"/>
+                <outlet property="lblHouseAccountLabel" destination="nG9-gu-YSi" id="9bf-ro-znB"/>
+                <outlet property="lblPoints" destination="hlu-hv-Pwq" id="coX-eg-qRs"/>
+                <outlet property="lblPointsHeader" destination="pTv-pw-fpi" id="VqJ-2c-thj"/>
+                <outlet property="lblUserName" destination="7uD-GJ-D8Y" id="8jk-vH-Ess"/>
+                <outlet property="lblWelcome" destination="DbX-te-qc1" id="QmN-bz-Ni1"/>
+                <outlet property="payAndRewardsDistanceConstraint" destination="AHo-2b-JIE" id="SIB-xP-dM0"/>
+                <outlet property="payTrailingConstraint" destination="n7p-zi-Fl3" id="ulC-ZU-rIY"/>
+                <outlet property="topBackgroundView" destination="V0C-6j-R44" id="FGE-7j-TfL"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="zeroWidthConstraint" destination="K5a-FI-9HX" id="6aP-BN-lbm"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleAspectFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V0C-6j-R44">
+                    <frame key="frameInset" width="320" height="191"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Welcome back," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DbX-te-qc1">
+                            <frame key="frameInset" minX="23" minY="75" width="282" height="21"/>
+                            <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="18"/>
+                            <color key="textColor" red="1" green="0.9882352941176471" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7uD-GJ-D8Y">
+                            <frame key="frameInset" minX="23" minY="94" width="192" height="20"/>
+                            <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="20"/>
+                            <color key="textColor" red="1" green="0.9882352941176471" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="points" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pTv-pw-fpi">
+                            <frame key="frameInset" minX="238" minY="104" width="50" height="18"/>
+                            <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="12"/>
+                            <color key="textColor" red="1" green="0.9882352941176471" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="house account" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nG9-gu-YSi">
+                            <frame key="frameInset" minX="186" minY="141" width="102" height="18"/>
+                            <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="12"/>
+                            <color key="textColor" red="1" green="0.9882352941176471" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="balance" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eNn-Pi-wFC">
+                            <frame key="frameInset" minX="23" minY="119" width="62" height="18"/>
+                            <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="12"/>
+                            <color key="textColor" red="1" green="0.9882352941176471" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hlu-hv-Pwq">
+                            <frame key="frameInset" minX="238" minY="119" width="50" height="18"/>
+                            <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="23"/>
+                            <color key="textColor" red="1" green="0.9882352941176471" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="$0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yCU-BK-ne5">
+                            <frame key="frameInset" minX="221" minY="159" width="67" height="18"/>
+                            <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="23"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="$0.00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iqq-pX-rjt">
+                            <frame key="frameInset" minX="23" minY="136" width="149" height="41"/>
+                            <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="40"/>
+                            <color key="textColor" red="1" green="0.9882352941176471" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="pTv-pw-fpi" firstAttribute="top" secondItem="DbX-te-qc1" secondAttribute="bottom" constant="-7" id="1xf-fD-yBy"/>
+                        <constraint firstAttribute="height" constant="191" id="9dq-du-dJm"/>
+                        <constraint firstItem="DbX-te-qc1" firstAttribute="top" secondItem="V0C-6j-R44" secondAttribute="top" constant="78" id="Cyg-0i-bJx"/>
+                        <constraint firstAttribute="trailing" secondItem="pTv-pw-fpi" secondAttribute="trailing" constant="24" id="DJq-hd-0d2"/>
+                        <constraint firstItem="7uD-GJ-D8Y" firstAttribute="top" secondItem="V0C-6j-R44" secondAttribute="top" constant="100" id="JIG-fy-lKD"/>
+                        <constraint firstItem="eNn-Pi-wFC" firstAttribute="leading" secondItem="V0C-6j-R44" secondAttribute="leading" constant="24" id="M9x-Xw-z2e"/>
+                        <constraint firstAttribute="trailing" secondItem="nG9-gu-YSi" secondAttribute="trailing" constant="24" id="Oyp-fS-ubU"/>
+                        <constraint firstItem="hlu-hv-Pwq" firstAttribute="top" secondItem="pTv-pw-fpi" secondAttribute="bottom" constant="-3" id="P3E-hZ-qqa"/>
+                        <constraint firstItem="Iqq-pX-rjt" firstAttribute="leading" secondItem="V0C-6j-R44" secondAttribute="leading" constant="24" id="Sjz-Z2-aHZ"/>
+                        <constraint firstItem="hlu-hv-Pwq" firstAttribute="top" secondItem="pTv-pw-fpi" secondAttribute="bottom" constant="-2" id="ayv-S8-JTt"/>
+                        <constraint firstItem="7uD-GJ-D8Y" firstAttribute="leading" secondItem="V0C-6j-R44" secondAttribute="leading" constant="24" id="j1O-dm-i6J"/>
+                        <constraint firstItem="hlu-hv-Pwq" firstAttribute="top" secondItem="DbX-te-qc1" secondAttribute="bottom" constant="19" id="qqw-ml-pGI"/>
+                        <constraint firstItem="nG9-gu-YSi" firstAttribute="top" secondItem="pTv-pw-fpi" secondAttribute="bottom" constant="29" id="sew-59-JsZ"/>
+                        <constraint firstItem="Iqq-pX-rjt" firstAttribute="top" secondItem="7uD-GJ-D8Y" secondAttribute="bottom" constant="25" id="sm3-Dy-8cn"/>
+                        <constraint firstAttribute="trailing" secondItem="hlu-hv-Pwq" secondAttribute="trailing" constant="24" id="tFr-qq-Tpc"/>
+                        <constraint firstItem="yCU-BK-ne5" firstAttribute="top" secondItem="nG9-gu-YSi" secondAttribute="bottom" id="tgG-GN-zfy"/>
+                        <constraint firstItem="Iqq-pX-rjt" firstAttribute="top" secondItem="eNn-Pi-wFC" secondAttribute="bottom" constant="-4" id="vXQ-1E-qXK"/>
+                        <constraint firstItem="DbX-te-qc1" firstAttribute="leading" secondItem="V0C-6j-R44" secondAttribute="leading" constant="24" id="wZk-Vo-gqd"/>
+                        <constraint firstAttribute="trailing" secondItem="yCU-BK-ne5" secondAttribute="trailing" constant="24" id="xBB-5e-euJ"/>
+                        <constraint firstItem="eNn-Pi-wFC" firstAttribute="top" secondItem="7uD-GJ-D8Y" secondAttribute="bottom" constant="7" id="z3t-H4-NzP"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="sm3-Dy-8cn"/>
+                            <exclude reference="P3E-hZ-qqa"/>
+                            <exclude reference="qqw-ml-pGI"/>
+                        </mask>
+                    </variation>
+                </view>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lv5-Ak-JWi">
+                    <frame key="frameInset" minY="192" width="320" height="368"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G6Y-8Y-NOC">
+                            <frame key="frameInset" minX="164" minY="8" width="150" height="100"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" priority="100" id="K5a-FI-9HX"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="sdd-XD-Wcl"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="13"/>
+                            <inset key="titleEdgeInsets" minX="-72" minY="0.0" maxX="0.0" maxY="-74"/>
+                            <inset key="imageEdgeInsets" minX="35" minY="0.0" maxX="0.0" maxY="40"/>
+                            <state key="normal" title="OFFERS (0)" image="offers-icon">
+                                <color key="titleColor" red="0.22691068053245544" green="0.6474112868309021" blue="0.67297172546386719" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="tapOnRewards:" destination="-1" eventType="touchUpInside" id="l4p-N7-c6q"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nNh-02-Rdx">
+                            <frame key="frameInset" minX="164" minY="116" width="150" height="100"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="Zaa-30-F9D"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="13"/>
+                            <inset key="titleEdgeInsets" minX="-65" minY="0.0" maxX="0.0" maxY="-75"/>
+                            <inset key="imageEdgeInsets" minX="40" minY="0.0" maxX="0.0" maxY="40"/>
+                            <state key="normal" title="ACCOUNT HISTORY" image="history-icon">
+                                <color key="titleColor" red="0.96750450134277344" green="0.58561497926712036" blue="0.15879043936729431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="tapOnHistory:" destination="-1" eventType="touchUpInside" id="Zzk-EL-Ohl"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fNj-C6-iDx">
+                            <frame key="frameInset" minX="6" minY="116" width="150" height="100"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="HjG-5J-JG2"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="13"/>
+                            <inset key="titleEdgeInsets" minX="-65" minY="0.0" maxX="0.0" maxY="-75"/>
+                            <inset key="imageEdgeInsets" minX="40" minY="0.0" maxX="0.0" maxY="40"/>
+                            <state key="normal" title="RELOAD" image="reload-icon">
+                                <color key="titleColor" red="0.30371430516242981" green="0.68125671148300171" blue="0.45104280114173889" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="tapOnWaysToPay:" destination="-1" eventType="touchUpInside" id="ixI-RK-J0N"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eMi-bZ-rlq">
+                            <frame key="frameInset" minX="8" minY="8" width="150" height="100"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="XKk-Wl-khR"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="13"/>
+                            <inset key="titleEdgeInsets" minX="-62" minY="0.0" maxX="0.0" maxY="-72"/>
+                            <inset key="imageEdgeInsets" minX="32" minY="0.0" maxX="0.0" maxY="40"/>
+                            <state key="normal" title="PAY" image="pay-icon">
+                                <color key="titleColor" red="0.41367709636688232" green="0.72203022241592407" blue="0.2005469799041748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="tapOnPay:" destination="-1" eventType="touchUpInside" id="sTb-ke-nm8"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.94901960784313721" green="0.94117647058823528" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="eMi-bZ-rlq" firstAttribute="leading" secondItem="lv5-Ak-JWi" secondAttribute="leading" constant="8" id="1u9-9z-xYs"/>
+                        <constraint firstItem="nNh-02-Rdx" firstAttribute="height" secondItem="G6Y-8Y-NOC" secondAttribute="height" id="5oK-wU-Ubx"/>
+                        <constraint firstAttribute="trailing" secondItem="G6Y-8Y-NOC" secondAttribute="trailing" constant="8" id="9Tq-SR-YRx"/>
+                        <constraint firstItem="G6Y-8Y-NOC" firstAttribute="width" secondItem="eMi-bZ-rlq" secondAttribute="width" id="A1V-zi-aM2"/>
+                        <constraint firstItem="G6Y-8Y-NOC" firstAttribute="leading" secondItem="eMi-bZ-rlq" secondAttribute="trailing" constant="8" id="AHo-2b-JIE"/>
+                        <constraint firstItem="fNj-C6-iDx" firstAttribute="height" secondItem="eMi-bZ-rlq" secondAttribute="height" id="BCw-3f-taU"/>
+                        <constraint firstItem="nNh-02-Rdx" firstAttribute="leading" secondItem="fNj-C6-iDx" secondAttribute="trailing" constant="8" id="LNw-QO-Ost"/>
+                        <constraint firstAttribute="bottom" secondItem="fNj-C6-iDx" secondAttribute="bottom" constant="6" id="Nfn-7Y-csX"/>
+                        <constraint firstAttribute="bottom" secondItem="nNh-02-Rdx" secondAttribute="bottom" constant="8" id="QAh-yN-Tdt"/>
+                        <constraint firstItem="fNj-C6-iDx" firstAttribute="leading" secondItem="lv5-Ak-JWi" secondAttribute="leading" constant="8" id="Sha-os-Ohv"/>
+                        <constraint firstItem="fNj-C6-iDx" firstAttribute="top" secondItem="eMi-bZ-rlq" secondAttribute="bottom" constant="8" id="TeT-lR-9gi"/>
+                        <constraint firstItem="nNh-02-Rdx" firstAttribute="top" secondItem="G6Y-8Y-NOC" secondAttribute="bottom" constant="8" id="Ugw-ie-MlY"/>
+                        <constraint firstItem="G6Y-8Y-NOC" firstAttribute="top" secondItem="lv5-Ak-JWi" secondAttribute="top" constant="8" id="Z7k-MO-ehQ"/>
+                        <constraint firstAttribute="trailing" secondItem="nNh-02-Rdx" secondAttribute="trailing" constant="8" id="cWO-Kv-ipS"/>
+                        <constraint firstAttribute="bottom" secondItem="fNj-C6-iDx" secondAttribute="bottom" constant="8" id="dht-Go-PRr"/>
+                        <constraint firstItem="nNh-02-Rdx" firstAttribute="width" secondItem="fNj-C6-iDx" secondAttribute="width" id="dw7-uf-5Zf"/>
+                        <constraint firstAttribute="bottom" secondItem="nNh-02-Rdx" secondAttribute="bottom" constant="6" id="eml-Kt-ran"/>
+                        <constraint firstAttribute="trailing" secondItem="eMi-bZ-rlq" secondAttribute="trailing" priority="100" constant="8" id="n7p-zi-Fl3"/>
+                        <constraint firstItem="eMi-bZ-rlq" firstAttribute="top" secondItem="lv5-Ak-JWi" secondAttribute="top" constant="8" id="o40-pc-nyj"/>
+                        <constraint firstItem="fNj-C6-iDx" firstAttribute="top" secondItem="eMi-bZ-rlq" secondAttribute="bottom" constant="8" id="ypG-Yg-Ehq"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Nfn-7Y-csX"/>
+                            <exclude reference="ypG-Yg-Ehq"/>
+                            <exclude reference="eml-Kt-ran"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="lv5-Ak-JWi" secondAttribute="trailing" id="1ax-k7-8OZ"/>
+                <constraint firstAttribute="bottom" secondItem="lv5-Ak-JWi" secondAttribute="bottom" id="2Qh-WU-RPv"/>
+                <constraint firstAttribute="trailing" secondItem="lv5-Ak-JWi" secondAttribute="trailing" id="NiJ-ub-TsE"/>
+                <constraint firstItem="lv5-Ak-JWi" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Nmx-AE-jXB"/>
+                <constraint firstAttribute="trailing" secondItem="V0C-6j-R44" secondAttribute="trailing" id="OUb-15-65D"/>
+                <constraint firstItem="V0C-6j-R44" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="SmW-pT-elP"/>
+                <constraint firstItem="lv5-Ak-JWi" firstAttribute="top" secondItem="V0C-6j-R44" secondAttribute="bottom" id="ccK-co-ODA"/>
+                <constraint firstAttribute="trailing" secondItem="V0C-6j-R44" secondAttribute="trailing" id="nke-v8-vkZ"/>
+                <constraint firstItem="V0C-6j-R44" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="z7v-Zx-WIq"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="nke-v8-vkZ"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="-8" y="-492"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="history-icon" width="65" height="65"/>
+        <image name="offers-icon" width="68" height="68"/>
+        <image name="pay-icon" width="65" height="68"/>
+        <image name="reload-icon" width="65" height="65"/>
+    </resources>
+</document>

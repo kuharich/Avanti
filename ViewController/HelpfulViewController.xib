@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Quicksand-Regular.ttf">
+            <string>Quicksand-Regular</string>
+            <string>Quicksand-Regular</string>
+            <string>Quicksand-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HelpfulViewController">
+            <connections>
+                <outlet property="commonIssuesButton" destination="3TJ-V4-fEI" id="WIJ-4P-Df5"/>
+                <outlet property="usingTheAppButton" destination="9UL-JC-WTX" id="6R3-eZ-zJ0"/>
+                <outlet property="usingTheMarketButton" destination="QYz-gx-too" id="ldl-pn-qgj"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QYz-gx-too">
+                    <rect key="frame" x="20" y="22" width="280" height="75"/>
+                    <color key="backgroundColor" red="0.43137254901960786" green="0.71372549019607845" blue="0.41960784313725491" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="75" id="lVZ-5B-YLa"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="20"/>
+                    <state key="normal" title="Using the Market">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="usingTheMarket:" destination="-1" eventType="touchUpInside" id="nFD-hx-Mod"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9UL-JC-WTX">
+                    <rect key="frame" x="20" y="105" width="280" height="75"/>
+                    <color key="backgroundColor" red="0.92156862745098034" green="0.59215686274509804" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="75" id="dXc-5O-axC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="20"/>
+                    <state key="normal" title="Using the App">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="usingTheApp:" destination="-1" eventType="touchUpInside" id="X7Q-xL-hdu"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3TJ-V4-fEI">
+                    <rect key="frame" x="20" y="188" width="280" height="75"/>
+                    <color key="backgroundColor" red="0.30980392156862746" green="0.70196078431372544" blue="0.69803921568627447" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="75" id="UF4-c6-g46"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="20"/>
+                    <state key="normal" title="Common Issues">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="commonIssues:" destination="-1" eventType="touchUpInside" id="ldP-qD-oSk"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.95294117647058818" green="0.94509803921568625" blue="0.91764705882352937" alpha="1" colorSpace="deviceRGB"/>
+            <constraints>
+                <constraint firstItem="QYz-gx-too" firstAttribute="width" secondItem="3TJ-V4-fEI" secondAttribute="width" id="1B0-D3-D7Q"/>
+                <constraint firstItem="3TJ-V4-fEI" firstAttribute="height" secondItem="QYz-gx-too" secondAttribute="height" id="9Wg-Jp-cwg"/>
+                <constraint firstAttribute="trailing" secondItem="9UL-JC-WTX" secondAttribute="trailing" constant="20" id="FcU-Mi-yVa"/>
+                <constraint firstAttribute="centerX" secondItem="9UL-JC-WTX" secondAttribute="centerX" id="L55-rP-Cqw"/>
+                <constraint firstItem="QYz-gx-too" firstAttribute="width" secondItem="9UL-JC-WTX" secondAttribute="width" id="RT1-KX-v0h"/>
+                <constraint firstItem="3TJ-V4-fEI" firstAttribute="top" secondItem="9UL-JC-WTX" secondAttribute="bottom" constant="8" symbolic="YES" id="UKh-52-Yhx"/>
+                <constraint firstItem="QYz-gx-too" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="22" id="V8a-Kv-Q5B"/>
+                <constraint firstItem="9UL-JC-WTX" firstAttribute="top" secondItem="QYz-gx-too" secondAttribute="bottom" constant="8" id="Yyb-Z9-qHH"/>
+                <constraint firstAttribute="centerX" secondItem="QYz-gx-too" secondAttribute="centerX" id="anV-85-6CL"/>
+                <constraint firstAttribute="trailing" secondItem="3TJ-V4-fEI" secondAttribute="trailing" constant="20" id="cXq-oF-zYo"/>
+                <constraint firstItem="3TJ-V4-fEI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="dc8-GL-ceB"/>
+                <constraint firstAttribute="trailing" secondItem="QYz-gx-too" secondAttribute="trailing" constant="20" id="fVF-oR-3UP"/>
+                <constraint firstItem="3TJ-V4-fEI" firstAttribute="height" secondItem="9UL-JC-WTX" secondAttribute="height" id="gQ0-rx-Dqh"/>
+                <constraint firstItem="QYz-gx-too" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="hSE-Wi-o33"/>
+                <constraint firstAttribute="centerX" secondItem="3TJ-V4-fEI" secondAttribute="centerX" id="i1J-qy-ob7"/>
+                <constraint firstItem="9UL-JC-WTX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="iam-1Y-T3u"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="1B0-D3-D7Q"/>
+                    <exclude reference="RT1-KX-v0h"/>
+                    <exclude reference="anV-85-6CL"/>
+                    <exclude reference="L55-rP-Cqw"/>
+                    <exclude reference="9Wg-Jp-cwg"/>
+                    <exclude reference="gQ0-rx-Dqh"/>
+                    <exclude reference="i1J-qy-ob7"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="314" y="390"/>
+        </view>
+    </objects>
+</document>

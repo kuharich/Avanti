@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Quicksand-Regular.ttf">
+            <string>Quicksand-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AccountHistoryViewController">
+            <connections>
+                <outlet property="lblNoRecords" destination="m8T-aW-zrk" id="qpb-fL-GpU"/>
+                <outlet property="loadingIndicator" destination="Qvn-Aa-RnH" id="A3J-iX-V5V"/>
+                <outlet property="tableHistory" destination="i5M-Pr-FkT" id="pR0-FW-eSn"/>
+                <outlet property="view" destination="IQe-O5-qzt" id="xAY-gw-2Ub"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="IQe-O5-qzt">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <tableView opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" style="plain" separatorStyle="default" rowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="i5M-Pr-FkT">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Tng-2m-Rnh"/>
+                        <outlet property="delegate" destination="-1" id="9aC-8N-iBw"/>
+                    </connections>
+                </tableView>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="Qvn-Aa-RnH">
+                    <rect key="frame" x="150" y="274" width="20" height="20"/>
+                </activityIndicatorView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="No history found, sorry!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="m8T-aW-zrk">
+                    <rect key="frame" x="0.0" y="263" width="320" height="42"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="320" id="KLe-cw-MVC"/>
+                        <constraint firstAttribute="height" constant="42" id="Uzz-2X-BIp"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="17"/>
+                    <color key="textColor" red="1" green="0.94901960780000005" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="HZK-bf-Ya8"/>
+                <constraint firstItem="i5M-Pr-FkT" firstAttribute="top" secondItem="IQe-O5-qzt" secondAttribute="top" id="MnC-If-eQK"/>
+                <constraint firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="YES-2x-hg0"/>
+                <constraint firstAttribute="centerY" secondItem="Qvn-Aa-RnH" secondAttribute="centerY" id="cvQ-To-N0d"/>
+                <constraint firstItem="m8T-aW-zrk" firstAttribute="centerY" secondItem="IQe-O5-qzt" secondAttribute="centerY" id="fjB-2h-sTD"/>
+                <constraint firstItem="m8T-aW-zrk" firstAttribute="centerX" secondItem="IQe-O5-qzt" secondAttribute="centerX" id="lby-WI-REU"/>
+                <constraint firstItem="i5M-Pr-FkT" firstAttribute="leading" secondItem="IQe-O5-qzt" secondAttribute="leading" id="xlA-Tt-TdN"/>
+                <constraint firstAttribute="centerX" secondItem="Qvn-Aa-RnH" secondAttribute="centerX" id="y0g-fU-BL5"/>
+            </constraints>
+            <point key="canvasLocation" x="503" y="759"/>
+        </view>
+    </objects>
+</document>

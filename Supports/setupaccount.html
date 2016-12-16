@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <style>
+            body {
+                background-color: rgb(0,128,64);
+                margin-left: 0px;
+            }
+        
+        ol {
+            color: #fff; -webkit-padding-start: 20px; font-family: 'Heiti TC';font-size: .8em;
+        }
+        
+        ol li {
+            margin-bottom: 4px;
+        }
+        </style>
+    </head>
+    <script type='text/javascript' src="https://www.youtube.com/iframe_api"></script>
+    <script type='text/javascript'>
+        var player, playing = false;
+        function onYouTubeIframeAPIReady(){
+            player = new YT.Player('playerId',{
+                                           events:{
+                                           //onReady:onPlayerReady,
+                                           onStateChange: onPlayerStateChange
+                                           }
+                                       }
+                                   )
+        }
+        function openCustomURLinIFrame(src)
+        {
+            var rootElm = document.documentElement;
+            var newFrameElm = document.createElement("IFRAME");
+            newFrameElm.setAttribute("src",src);
+            rootElm.appendChild(newFrameElm);
+            //remove the frame now
+            newFrameElm.parentNode.removeChild(newFrameElm);
+        }
+        function calliOSFunction(functionName, args, successCallback, errorCallback)
+        {
+            var url = "js2ios://";
+            
+            var callInfo = {};
+            callInfo.functionname = functionName;
+            if (successCallback)
+            {
+                callInfo.success = successCallback;
+            }
+            if (errorCallback)
+            {
+                callInfo.error = errorCallback;
+            }
+            if (args)
+            {
+                callInfo.args = args;
+            }
+            
+            url += JSON.stringify(callInfo)
+            
+            openCustomURLinIFrame(url);
+        }
+    
+        function onPlayerStateChange(event) {
+            if(!playing){
+                calliOSFunction("onPlayerStateChange", ["play"], null, null);
+                playing = true;
+            }
+            else {
+                calliOSFunction("onPlayerStateChange", ["pause"], null, null);
+                playing = false;
+            }
+        }
+        function onPlayerReady(a){
+            a.target.playVideo();
+        }
+    </script>
+    <body>
+        <!--iframe width="100%" src="https://www.youtube.com/embed/zLOUdVUW1rQ"></iframe-->
+        <div id="player">
+            <iframe id='playerId' type='text/html' width='100%' heigth='100%' src="https://www.youtube.com/embed/zLOUdVUW1rQ?enablejsapi=1&rel=1&playsinline=1" frameborder='0'>
+        </div>
+<br/>
+</body>
+</html>

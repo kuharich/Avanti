@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bodyTextColor</key>
+	<string>#65676a</string>
+	<key>logInButtonColor</key>
+	<string>#40aab8</string>
+	<key>primaryButtonBackgroundColor</key>
+	<string>#40aab8</string>
+	<key>secondaryTextColor</key>
+	<string>#313d4e</string>
+	<key>itemBackgroundColor</key>
+	<string>#ffffff</string>
+	<key>selectedAmountButtonBackgroundColor</key>
+	<string>#40aab8</string>
+	<key>selectedAmountButtonTextColor</key>
+	<string>#ffffff</string>
+	<key>reloadAmountHeaderColor</key>
+	<string>#313d4e</string>
+	<key>statusBarStyle</key>
+	<string>white</string>
+	<key>menuSandwichColor</key>
+	<string>#fefbf3</string>
+	<key>reloadTextColor</key>
+	<string>#006893</string>
+	<key>historyTextColor</key>
+	<string>#3aaab9</string>
+	<key>offersTextColor</key>
+	<string>#006893</string>
+	<key>payTextColor</key>
+	<string>#3aaab9</string>
+	<key>homeViewTextColor</key>
+	<string>#283D56</string>
+	<key>gradientEnd</key>
+	<string>#334052</string>
+	<key>gradientStart</key>
+	<string>#334052</string>
+	<key>primaryBackgroundColor</key>
+	<string>#334052</string>
+	<key>screenBackgroundColor</key>
+	<string>#e0e0e0</string>
+	<key>textPlaceholderColor</key>
+	<string>#aaaaaa</string>
+	<key>primaryTextColor</key>
+	<string>#fefbf3</string>
+	<key>backgroundImage</key>
+	<string></string>
+	<key>applicationName</key>
+	<string>parkspantry</string>
+	<key>welcomeText</key>
+	<string>Welcome to Parks Pantry</string>
+	<key>quicksandFont</key>
+	<string>parkspantry.assets/Lato-Regular.ttf</string>
+	<key>quicksandBoldFont</key>
+	<string>parkspantry.assets/Lato-Bold.ttf</string>
+	<key>quicksandFontName</key>
+	<string>Lato-Regular</string>
+	<key>quicksandBoldFontName</key>
+	<string>Lato-Bold</string>
+	<key>highlightColor</key>
+	<string>#fefbf3</string>
+	<key>offerDescriptionColor</key>
+	<string>#006893</string>
+	<key>accentTextColor</key>
+	<string>#243548</string>
+</dict>
+</plist>
